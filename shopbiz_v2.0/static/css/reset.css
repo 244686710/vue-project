@@ -1,0 +1,550 @@
+/**
+ * 主样式文件
+ */
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+
+abbr,
+article,
+aside,
+bb,
+datagrid,
+datalist,
+details,
+dialog,
+eventsource,
+figure,
+figcaption,
+footer,
+header,
+mark,
+menu,
+meter,
+nav,
+output,
+progress,
+section,
+time {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1366px;
+    font: 14px/150% tahoma, arial, "Microsoft YaHei", '\5b8b\4f53', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0px !important;
+}
+
+li {
+    list-style: none;
+    outline: 0 none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    /* border-radius: 100%; */
+}
+
+em,
+i {
+    FONT-STYLE: normal
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+textarea {
+    overflow-y: auto;
+}
+
+select {
+    FONT: 12px Arial, Tahoma, simsun
+}
+
+table {
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input::-moz-placeholder {
+    color: #999;
+}
+
+input:-moz-placeholder {
+    color: #999;
+}
+
+input:-ms-input-placeholder {
+    color: #999;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+}
+/*滚动条样式*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:vertical {
+    display: none
+}
+
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+    background-color: #e2e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: rgba(0, 0, 0, .35)
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+    background-color: rgba(0, 0, 0, .38)
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto
+}
+/* 清除浮动 */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/* 文本对齐方式 */
+.text_left{
+  text-align: left;
+}
+.text_center{
+  text-align: center;
+}
+.text_right{
+  text-align: right;
+}
+
+/* 字体加粗 */
+.strong{
+  font-weight: 600;
+}
+input{
+  padding: 0;
+  margin: 0;
+}
+.icon-accordion{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -67px;
+  width: 11px;
+  height: 8px;
+  transition: all .3s;
+}
+.icon-accordion-active{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -80px;
+  width: 11px;
+  height: 8px;
+}
+.icon-arrow-bottom-active{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -17px;
+  display: inline-block;
+  width: 11px;
+  height: 12px;
+  cursor: pointer;
+}
+.icon-arrow-bottom{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -34px;
+  width: 11px;
+  height: 12px;
+  cursor: default;
+}
+.icon-arrow-top-active{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px 0px;
+  display: inline-block;
+  width: 11px;
+  height: 12px;
+  cursor: pointer;
+}
+.icon-arrow-top{
+  background: url("../sprite.png")no-repeat;
+  background-position: -98px -98px;
+  width: 11px;
+  height: 12px;
+  cursor: default;
+}
+.icon-checkbox-default{
+  background: url("../sprite.png")no-repeat;
+  background-position: -100px -67px;
+  width: 15px;
+  height: 15px;
+}
+.icon-checkbox-checked{
+  background: url("../sprite.png")no-repeat;
+  background-position: -40px -98px;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-close{
+  background: url("../sprite.png")no-repeat;
+  background-position: 0px 0px;
+  width: 21px;
+  height: 21px;
+}
+.icon-delivey{
+  background: url("../sprite.png")no-repeat;
+  background-position: -77px -23px;
+  width: 18px;
+  height: 18px;
+}
+.layui-nav-itemed .icon-delivey{
+  background: url("../sprite.png")no-repeat;
+  background-position: -77px 0px;
+  width: 18px;
+  height: 18px;
+}
+
+.layui-nav-itemed .icon-fund{
+  background: url("../sprite.png")no-repeat;
+  background-position: -77px -46px;
+  width: 18px;
+  height: 18px;
+}
+.icon-fund{
+  background: url("../sprite.png")no-repeat;
+  background-position: 0px -75px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-mystore{
+  background: url("../sprite.png")no-repeat;
+  background-position: -46px -75px;
+  width: 18px;
+  height: 18px;
+}
+.layui-nav-itemed .icon-mystore{
+  background: url("../sprite.png")no-repeat;
+  background-position: -23px -75px;
+  width: 18px;
+  height: 18px;
+}
+.layui-nav-itemed  .icon-order{
+  background: url("../sprite.png")no-repeat;
+  background-position: -69px -75px;
+  width: 18px;
+  height: 18px;
+}
+.icon-order{
+  background: url("../sprite.png")no-repeat;
+  background-position: -52px -27px;
+  width: 18px;
+  height: 18px;
+}
+.icon-pic-default{
+  background: url("../sprite.png")no-repeat;
+  background-position: -26px 0px;
+  width: 21px;
+  height: 21px;
+}
+.icon-pic-checked{
+  background: url("../sprite.png")no-repeat;
+  background-position: 0px -26px;
+  width: 21px;
+  height: 21px;
+}
+.icon-product{
+  background: url("../sprite.png")no-repeat;
+  background-position: 0px -52px;
+  width: 18px;
+  height: 18px;
+}
+.layui-nav-itemed .icon-product{
+  background: url("../sprite.png")no-repeat;
+  background-position: -23px -52px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-radio-blue-default{
+  background: url("../sprite.png")no-repeat;
+  background-position: -20px -98px;
+  width: 15px;
+  height: 15px;
+}
+.icon-radio-blue-checked{
+  background: url("../sprite.png")no-repeat;
+  background-position: 0px -98px;
+  width: 15px;
+  height: 15px;
+}
+.icon-radio-orange{
+  background: url("../sprite.png")no-repeat;
+  background-position: -100px -46px;
+  width: 16px;
+  height: 16px;
+}
+.icon-radio-orange-checked{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -51px;
+  width: 10px;
+  height: 11px;
+}
+.icon-select-arrow{
+  background: url("../sprite.png")no-repeat;
+  background-position: -123px -93px;
+  width: 7px;
+  height: 5px;
+}
+.layui-nav-itemed .icon-set{
+  background: url("../sprite.png")no-repeat;
+  background-position: -26px -26px;
+  width: 18px;
+  height: 18px;
+}
+.icon-set{
+  background: url("../sprite.png")no-repeat;
+  background-position: -100px -23px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-star{
+  background: url("../sprite.png")no-repeat;
+  background-position: -79px -98px;
+  width: 14px;
+  height: 14px;
+}
+.icon-star-active{
+  background: url("../sprite.png")no-repeat;
+  background-position: -60px -98px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon-user{
+  background: url("../sprite.png")no-repeat;
+  background-position: -52px 0px;
+  width: 20px;
+  height: 22px;
+}
+.layui-nav-itemed .icon-vip-default{
+  background: url("../sprite.png")no-repeat;
+  background-position: -46px -52px;
+  width: 18px;
+  height: 18px;
+}
+.icon-vip-default{
+  background: url("../sprite.png")no-repeat;
+  background-position: -100px 0px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-enter-arrow{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -474px -324px;
+  width: 28px;
+  height: 24px;
+}
+.icon-enter-bank{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -358px;
+  width: 22px;
+  height: 22px;
+}
+.icon-enter-blue-circle{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -490px -146px;
+  width: 20px;
+  height: 20px;
+}
+.icon-enter-book{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -340px 0px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-broken{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px 0px;
+  width: 68px;
+  height: 68px;
+}
+.icon-enter-car{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -340px -206px;
+  width: 86px;
+  height: 60px;
+}
+.icon-enter-code{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: 0px 0px;
+  width: 232px;
+  height: 232px;
+}
+.icon-enter-error{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -193px;
+  width: 42px;
+  height: 42px;
+}
+.icon-enter-flower{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -206px -237px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-logo{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: 0px -340px;
+  width: 128px;
+  height: 40px;
+}
+.icon-enter-mobile{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -73px;
+  width: 66px;
+  height: 68px;
+}
+.icon-enter-note{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -237px 0px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-pen{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: 0px -237px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-room{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -237px -103px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-samll-arrow{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -490px -171px;
+  width: 10px;
+  height: 8px;
+}
+.icon-enter-set{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -103px -237px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-small-note{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -287px;
+  width: 28px;
+  height: 32px;
+}
+.icon-enter-small-order{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -476px -287px;
+  width: 28px;
+  height: 32px;
+}
+.icon-enter-small-star{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -324px;
+  width: 26px;
+  height: 29px;
+}
+.icon-enter-store{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -340px -103px;
+  width: 98px;
+  height: 98px;
+}
+.icon-enter-success{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -146px;
+  width: 42px;
+  height: 42px;
+}
+.icon-enter-waiting{
+  background: url("../step-sprite.png")no-repeat;
+  background-position: -443px -240px;
+  width: 42px;
+  height: 42px;
+}
+
+.inline_block, .inline-block{display: inline-block}
+.hide{ display: none }
+.fl{float: left}
+.fr{float: right}
+.overflow{overflow: hidden}
+
+.margin_left20 {
+  margin-left: 20px;
+}
+.margin_right20 {
+  margin-right: 20px;
+}
+
+.edui-default  .edui-for-imagedes  .edui-icon {
+  background: url('../upload.png')2px 4px no-repeat !important;
+}
+.edui-editor-toolbarbox {
+  position: static !important
+}

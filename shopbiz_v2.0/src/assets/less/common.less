@@ -1,0 +1,276 @@
+@import url('./index.less');
+// 通用查询列表样式
+html,body{
+  // height: 100%
+}
+.m-search {
+  position: relative;
+  padding: 20px 250px 0 5px;
+  .layui-form-label {
+    float: left;
+    font-size: @font-14;
+    color: @color-3;
+    display: block;
+    padding: 5px 15px;
+    width: auto;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  .layui-form-item .layui-input-inline {
+    float: left;
+    width: auto;
+    margin-right: 0px;
+  }
+
+  .layui-input[type="text"] {
+    width: 200px;
+  }
+
+  .layui-input.input_date {
+    width: @input-width;
+  }
+  .layui-input,
+  .layui-select,
+  .layui-textarea {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid @color-c;
+    background-color: @color-white;
+    border-radius: 2px;
+  }
+
+  .layui-form-item .layui-inline {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn_group {
+    margin-right: 15px;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    input:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+  // 日期分割符
+  .layui-form-mid {
+    float: left;
+    display: block;
+    padding: 5px 0 !important;
+    margin-right: 0px;
+  }
+  i.separator {
+    width: 16px;
+    height: 1px;
+    display: inline-block;
+    background: #cccccc;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+}
+// 字体大小
+.font_16 {
+  font-size: @font-16 !important;
+}
+
+.font_14 {
+  font-size: @font-14 !important;
+}
+
+.font_12 {
+  font-size: @font-12!important;
+}
+// 字体颜色
+.f_blue {
+  color: @color-blue !important;
+}
+.f_orange {
+  color: @color-orange !important;
+}
+.f_point {
+  color: @color-3 !important;
+}
+.f_label {
+  color: @color-9 !important;
+}
+.f_info {
+  color: @color-6 !important;
+}
+// 操作高亮色，链接
+a.handle,.handle {
+  color: @color-blue;
+  cursor: pointer;
+}
+// 全局边框颜色
+.border_top {
+  border-top: 1px solid @color-border;
+}
+.border_bottom {
+  border-bottom: 1px solid @color-border;
+}
+.border_right {
+  border-right: 1px solid @color-border !important;
+}
+.border_left {
+  border-left: 1px solid @color-border;
+}
+
+// tab 样式
+.m-subtab {
+  padding-left: 10px;
+  li {
+    display: inline-block;
+    padding: 0 26px 4px;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent;
+    color: @color-3;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+      border-bottom: 2px solid @color-orange;
+      color: @color-orange;
+    }
+  }
+}
+// select 下团框高度定义
+.select_h100 .layui-form-select dl {
+  max-height: 100px;
+}
+
+.select_h150 .layui-form-select dl {
+  max-height: 150px;
+}
+// table样式自定义
+.layui-table thead tr th {
+  font-weight: 600;
+  padding: 15px 20px;
+  background: @color-white;
+}
+
+.layui-table {
+  border: none !important;
+
+  tbody th {
+    margin-top: 10px;
+    height: 40px;
+    padding: 0;
+    background: #f4f5f7;
+    h4 {
+      margin-top: 10px;
+      padding-left: 20px;
+      height: 40px;
+      line-height: 40px;
+      background: @color-section-header;
+      .border_right;
+      .border_left;
+      border-top: 1px solid @color-border;
+    }
+  }
+
+  dl {
+    box-sizing: border-box;
+    min-width: 380px;
+    max-width: 500px;
+    height: 140px;
+    padding: 20px;
+    border-bottom: 1px solid @color-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+    .good_title {
+      margin-top: 10px;
+    }
+    dd.good_size {
+      margin-top: 10px;
+      line-height: 18px;
+    }
+  }
+
+  .price_box {
+    box-sizing: border-box;
+    padding: 50px 20px 0;
+    height: 140px;
+    border-left: 1px solid @color-border;
+    .border_bottom;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// 错误颜色
+.c_error {
+  color: @color-error;
+}
+// 宽80
+.w80 {
+  width: 80px !important;
+}
+
+// 清除padding
+.clear_padding {
+  padding: 0 !important;
+}
+// 清除边框
+.clear_border {
+  border: none !important;
+}
+
+.padding_top10 {
+  padding-top: 10px;
+}
+.padding_top20 {
+  padding-top: 20px;
+}
+.padding_top30 {
+  padding-top: 30px;
+}
+
+.margin_left10 { margin-left: 10px}
+.margin_left20 {
+  margin-left: 20px;
+}
+.margin_top10{margin-top: 10px;}
+.margin_bottom10 {
+  margin-bottom: 10px;
+}
+.margin_bottom40 {
+  margin-bottom: 40px;
+}
+
+.bg_white {
+  background: @color-white;
+}
+.border {
+  border: 1px solid @color-border;
+}
+
+.badge_orange{
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  color: @color-white;
+  background: @color-orange;
+}
+
+.title_crumbs a{
+  font-size: 14px;
+  color: @color-3;
+  &:hover {
+    color: @color-blue
+  }
+}
